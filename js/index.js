@@ -45,17 +45,29 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 // Navigation Bar Text
 navText = ["Services", "Product", "Vision", "Features", "About", "Contact"];
 const firstChild = document.querySelector("nav a:nth-child(1)");
-  firstChild.textContent = `${navText[0]}`;
+  firstChild.textContent = siteContent['nav']['nav-item-1'];
 const secondChild = document.querySelector("nav a:nth-child(2)");
-  secondChild.textContent = `${navText[1]}`;
+  secondChild.textContent = siteContent['nav']['nav-item-2'];
 const thirdChild = document.querySelector("nav a:nth-child(3)");
-  thirdChild.textContent = `${navText[2]}`;
+  thirdChild.textContent = siteContent['nav']['nav-item-3'];
 const forthChild = document.querySelector("nav a:nth-child(4)");
-  forthChild.textContent = `${navText[3]}`;
+  forthChild.textContent = siteContent['nav']['nav-item-4'];
 const fifthChild = document.querySelector("nav a:nth-child(5)");
-  fifthChild.textContent = `${navText[4]}`;
+  fifthChild.textContent = siteContent['nav']['nav-item-5'];
 const sixthChild = document.querySelector("nav a:nth-child(6)");
-  sixthChild.textContent = `${navText[5]}`;
+  sixthChild.textContent = siteContent['nav']['nav-item-6'];
+
+const navContainer = document.querySelector("nav");
+const seventhChild = document.createElement("a");
+const eighthChild = document.createElement("a");
+seventhChild.textContent = "Investor Relations";
+eighthChild.textContent = "Resources";
+navContainer.appendChild(seventhChild);
+navContainer.prepend(eighthChild);
+
+let navBarColor = Array.from(document.querySelectorAll("a"))
+navBarColor.forEach(anchor => anchor.style.color = "green");
+
 // Navigation Bar Text
 
 //Upper Section Containing "Dom is Awesome & Picture of Code"
@@ -119,3 +131,8 @@ mainImg.setAttribute('src', siteContent["cta"]["img-src"]);
   const addressChild3 = document.querySelector(".contact p:nth-child(4)");
   addressChild3.textContent = siteContent['contact']['email'];
 //Contact
+
+//Footer
+const footerMessage = document.querySelector("footer p");
+footerMessage.textContent = siteContent['footer']['copyright'];
+//Footer
