@@ -44,6 +44,15 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 // Navigation Bar Text
 navText = ["Services", "Product", "Vision", "Features", "About", "Contact"];
-const navBar = document.querySelector("a");
-navBar.textContent = `${navText[0]} ${navText[1]}  ${navText[2]}  ${navText[3]}  ${navText[4]}  ${navText[5]}`;
-
+const firstChild = document.querySelector("nav a:nth-child(1)");
+  firstChild.textContent = `${navText[0]}`;
+const secondChild = document.querySelector("nav a:nth-child(2)");
+  secondChild.textContent = `${navText[1]}`;
+const thirdChild = document.querySelector("nav a:nth-child(3)");
+  thirdChild.textContent = `${navText[2]}`;
+const forthChild = document.querySelector("nav a:nth-child(4)");
+  forthChild.textContent = `${navText[3]}`;
+const fifthChild = document.querySelector("nav a:nth-child(5)");
+  fifthChild.textContent = `${navText[4]}`;
+const sixthChild = document.querySelector("nav a:nth-child(6)");
+  sixthChild.textContent = `${navText[5]}`;
