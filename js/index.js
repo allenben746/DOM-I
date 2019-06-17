@@ -64,6 +64,7 @@ seventhChild.textContent = "Investor Relations";
 eighthChild.textContent = "Resources";
 navContainer.appendChild(seventhChild);
 navContainer.prepend(eighthChild);
+navContainer.style.fontSize = ".9rem"
 
 let navBarColor = Array.from(document.querySelectorAll("a"))
 navBarColor.forEach(anchor => anchor.style.color = "green");
@@ -76,6 +77,7 @@ const headMessage = document.querySelector("h1");
 
 const headButton = document.querySelector("button");
   headButton.textContent = "Get Started";
+  headButton.style.borderRadius = "20%";
 
 const mainImg = document.getElementById("cta-img");
 mainImg.setAttribute('src', siteContent["cta"]["img-src"]);
