@@ -56,3 +56,17 @@ const fifthChild = document.querySelector("nav a:nth-child(5)");
   fifthChild.textContent = `${navText[4]}`;
 const sixthChild = document.querySelector("nav a:nth-child(6)");
   sixthChild.textContent = `${navText[5]}`;
+// Navigation Bar Text
+
+//Upper Section Containing "Dom is Awesome & Picture of Code"
+const headMessage = document.querySelector("h1");
+  headMessage.textContent = "DOM IS AWESOME";
+
+const headButton = document.querySelector("button");
+  headButton.textContent = "Get Started";
+
+const topContent = document.querySelector("top-content");
+
+const topContentImg = document.getElementById("cta-img");
+topContentImg.setAttribute('src', siteContent["cta"]["img-src"]);
+//Upper Section Containing "Dom is Awesome & Picture of Code"
