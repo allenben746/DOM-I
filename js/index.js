@@ -70,30 +70,37 @@ mainImg.setAttribute('src', siteContent["cta"]["img-src"]);
 //Upper Section Containing "Dom is Awesome & Picture of Code"
 
 //Middle Section
-  //Top Section
+//Top Section
   const featuresPara = document.querySelector(".top-content div:nth-child(1) p");
-  featuresPara.style.color = "green";
-  featuresPara.textContent = "haaaaaa";
+  featuresPara.textContent = siteContent['main-content']['features-content'];
+  const featuresHead = document.querySelector(".top-content div:nth-child(1) h4");
+  featuresHead.textContent = siteContent['main-content']['features-h4'];
 
   const aboutPara = document.querySelector(".top-content div:nth-child(2) p");
-  aboutPara.style.color = "green";
-  aboutPara.textContent = "haaaaaa";
-  //Top Section
+  aboutPara.textContent = siteContent['main-content']['about-content'];
+  const aboutHead = document.querySelector(".top-content div:nth-child(2) h4");
+  aboutHead.textContent = siteContent['main-content']['about-h4'];
+//Top Section
+
 //Image- snippet of code
   const middleSectionImg = document.querySelector(".main-content img");
   middleSectionImg.setAttribute(`src`, siteContent['main-content']['middle-img-src']);
 //Image- snippet of code
+
 //Bottom Section
   const servicesPara = document.querySelector(".bottom-content div:nth-child(1) p");
-  servicesPara.style.color = "green";
-  servicesPara.textContent = "haaaaaa";
+  servicesPara.textContent= siteContent[`main-content`][`services-content`];
+  const servicesHead = document.querySelector(".bottom-content div:nth-child(1) h4");
+  servicesHead.textContent = siteContent['main-content']['services-h4'];
 
   const productPara = document.querySelector(".bottom-content div:nth-child(2) p");
-  productPara.style.color = "green";
-  productPara.textContent = "haaaaaa";
+  productPara.textContent = siteContent['main-content']['product-content'];
+  const productHead = document.querySelector(".bottom-content div:nth-child(2) h4");
+  productHead.textContent = siteContent['main-content']['product-h4'];
 
   const visionPara = document.querySelector(".bottom-content div:nth-child(3) p");
-  visionPara.style.color = "green";
-  visionPara.textContent = "haaaaaa";
+  visionPara.textContent = siteContent[`main-content`]['vision-content'];
+  const visionHead = document.querySelector(".bottom-content div:nth-child(3) h4");
+  visionHead.textContent = siteContent['main-content']['vision-h4'];
 //Bottom Section
 //Middle Section
