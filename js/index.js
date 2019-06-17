@@ -65,8 +65,35 @@ const headMessage = document.querySelector("h1");
 const headButton = document.querySelector("button");
   headButton.textContent = "Get Started";
 
-const topContent = document.querySelector("top-content");
-
-const topContentImg = document.getElementById("cta-img");
-topContentImg.setAttribute('src', siteContent["cta"]["img-src"]);
+const mainImg = document.getElementById("cta-img");
+mainImg.setAttribute('src', siteContent["cta"]["img-src"]);
 //Upper Section Containing "Dom is Awesome & Picture of Code"
+
+//Middle Section
+  //Top Section
+  const featuresPara = document.querySelector(".top-content div:nth-child(1) p");
+  featuresPara.style.color = "green";
+  featuresPara.textContent = "haaaaaa";
+
+  const aboutPara = document.querySelector(".top-content div:nth-child(2) p");
+  aboutPara.style.color = "green";
+  aboutPara.textContent = "haaaaaa";
+  //Top Section
+//Image- snippet of code
+  const middleSectionImg = document.querySelector(".main-content img");
+  middleSectionImg.setAttribute(`src`, siteContent['main-content']['middle-img-src']);
+//Image- snippet of code
+//Bottom Section
+  const servicesPara = document.querySelector(".bottom-content div:nth-child(1) p");
+  servicesPara.style.color = "green";
+  servicesPara.textContent = "haaaaaa";
+
+  const productPara = document.querySelector(".bottom-content div:nth-child(2) p");
+  productPara.style.color = "green";
+  productPara.textContent = "haaaaaa";
+
+  const visionPara = document.querySelector(".bottom-content div:nth-child(3) p");
+  visionPara.style.color = "green";
+  visionPara.textContent = "haaaaaa";
+//Bottom Section
+//Middle Section
