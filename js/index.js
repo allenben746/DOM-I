@@ -104,3 +104,18 @@ mainImg.setAttribute('src', siteContent["cta"]["img-src"]);
   visionHead.textContent = siteContent['main-content']['vision-h4'];
 //Bottom Section
 //Middle Section
+
+//Contact
+  const contactHead = document.querySelector(".contact h4");
+  contactHead.textContent = siteContent['contact']['contact-h4'];
+
+  //Contact Information
+  const addressChild1 = document.querySelector(".contact p:nth-child(2)");
+  addressChild1.textContent = siteContent['contact']['address'];
+
+  const addressChild2 = document.querySelector(".contact p:nth-child(3)");
+  addressChild2.textContent = siteContent['contact']['phone'];
+
+  const addressChild3 = document.querySelector(".contact p:nth-child(4)");
+  addressChild3.textContent = siteContent['contact']['email'];
+//Contact
