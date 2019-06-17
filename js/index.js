@@ -41,4 +41,9 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
-// logo.src = "img\logo.png";
+
+// Navigation Bar Text
+navText = ["Services", "Product", "Vision", "Features", "About", "Contact"];
+const navBar = document.querySelector("a");
+navBar.textContent = `${navText[0]} ${navText[1]}  ${navText[2]}  ${navText[3]}  ${navText[4]}  ${navText[5]}`;
+
