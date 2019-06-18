@@ -1,3 +1,4 @@
+// Ben Allen
 const siteContent = {
   "nav": {
     "nav-item-1": "Services",
@@ -40,3 +41,100 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+// Navigation Bar Text
+navText = ["Services", "Product", "Vision", "Features", "About", "Contact"];
+const firstChild = document.querySelector("nav a:nth-child(1)");
+  firstChild.textContent = siteContent['nav']['nav-item-1'];
+const secondChild = document.querySelector("nav a:nth-child(2)");
+  secondChild.textContent = siteContent['nav']['nav-item-2'];
+const thirdChild = document.querySelector("nav a:nth-child(3)");
+  thirdChild.textContent = siteContent['nav']['nav-item-3'];
+const forthChild = document.querySelector("nav a:nth-child(4)");
+  forthChild.textContent = siteContent['nav']['nav-item-4'];
+const fifthChild = document.querySelector("nav a:nth-child(5)");
+  fifthChild.textContent = siteContent['nav']['nav-item-5'];
+const sixthChild = document.querySelector("nav a:nth-child(6)");
+  sixthChild.textContent = siteContent['nav']['nav-item-6'];
+
+const navContainer = document.querySelector("nav");
+const seventhChild = document.createElement("a");
+const eighthChild = document.createElement("a");
+seventhChild.textContent = "Investor Relations";
+eighthChild.textContent = "Resources";
+navContainer.appendChild(seventhChild);
+navContainer.prepend(eighthChild);
+navContainer.style.fontSize = ".9rem"
+
+let navBarColor = Array.from(document.querySelectorAll("a"))
+navBarColor.forEach(anchor => anchor.style.color = "green");
+
+// Navigation Bar Text
+
+//Upper Section Containing "Dom is Awesome & Picture of Code"
+const headMessage = document.querySelector("h1");
+  headMessage.textContent = "DOM IS AWESOME";
+
+const headButton = document.querySelector("button");
+  headButton.textContent = "Get Started";
+  headButton.style.borderRadius = "20%";
+
+const mainImg = document.getElementById("cta-img");
+mainImg.setAttribute('src', siteContent["cta"]["img-src"]);
+//Upper Section Containing "Dom is Awesome & Picture of Code"
+
+//Middle Section
+//Top Section
+  const featuresPara = document.querySelector(".top-content div:nth-child(1) p");
+  featuresPara.textContent = siteContent['main-content']['features-content'];
+  const featuresHead = document.querySelector(".top-content div:nth-child(1) h4");
+  featuresHead.textContent = siteContent['main-content']['features-h4'];
+
+  const aboutPara = document.querySelector(".top-content div:nth-child(2) p");
+  aboutPara.textContent = siteContent['main-content']['about-content'];
+  const aboutHead = document.querySelector(".top-content div:nth-child(2) h4");
+  aboutHead.textContent = siteContent['main-content']['about-h4'];
+//Top Section
+
+//Image- snippet of code
+  const middleSectionImg = document.querySelector(".main-content img");
+  middleSectionImg.setAttribute(`src`, siteContent['main-content']['middle-img-src']);
+//Image- snippet of code
+
+//Bottom Section
+  const servicesPara = document.querySelector(".bottom-content div:nth-child(1) p");
+  servicesPara.textContent= siteContent[`main-content`][`services-content`];
+  const servicesHead = document.querySelector(".bottom-content div:nth-child(1) h4");
+  servicesHead.textContent = siteContent['main-content']['services-h4'];
+
+  const productPara = document.querySelector(".bottom-content div:nth-child(2) p");
+  productPara.textContent = siteContent['main-content']['product-content'];
+  const productHead = document.querySelector(".bottom-content div:nth-child(2) h4");
+  productHead.textContent = siteContent['main-content']['product-h4'];
+
+  const visionPara = document.querySelector(".bottom-content div:nth-child(3) p");
+  visionPara.textContent = siteContent[`main-content`]['vision-content'];
+  const visionHead = document.querySelector(".bottom-content div:nth-child(3) h4");
+  visionHead.textContent = siteContent['main-content']['vision-h4'];
+//Bottom Section
+//Middle Section
+
+//Contact
+  const contactHead = document.querySelector(".contact h4");
+  contactHead.textContent = siteContent['contact']['contact-h4'];
+
+  //Contact Information
+  const addressChild1 = document.querySelector(".contact p:nth-child(2)");
+  addressChild1.textContent = siteContent['contact']['address'];
+
+  const addressChild2 = document.querySelector(".contact p:nth-child(3)");
+  addressChild2.textContent = siteContent['contact']['phone'];
+
+  const addressChild3 = document.querySelector(".contact p:nth-child(4)");
+  addressChild3.textContent = siteContent['contact']['email'];
+//Contact
+
+//Footer
+const footerMessage = document.querySelector("footer p");
+footerMessage.textContent = siteContent['footer']['copyright'];
+//Footer
